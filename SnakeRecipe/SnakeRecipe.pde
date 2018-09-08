@@ -74,7 +74,7 @@ void draw() {
 
 
   //12. Call the manageTail, drawFood, drawSnake, move, and collision methods.
-  manageTail();
+ 
   drawFood();
   drawSnake();
   move();
@@ -95,6 +95,7 @@ void drawSnake() {
 rect(s.x,s.y,10,10);
 
   //test your code
+   manageTail();
 }
 
 
@@ -194,10 +195,10 @@ void collision() {
         foodX = ((int)random(50)*10);
 
 foodY = ((int)random(50)*10);
-     }
-     noms++;
+     
+     noms=noms+1;
 }
-
+}
 
 
 /**
